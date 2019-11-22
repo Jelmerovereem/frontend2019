@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+	font-family: segoe ui;
+}
+
+header {
+	background-image: url("img/Nav_background2.jpg");
+	background-size: cover;
+	height: 80vh;
+}
+
+
+/*Responsive Nav*/
+
+#navigatie {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {	
+	a.icon {
+		
+		display: block;
+		color: white;
+	}
+	.icon {
+		position: absolute;
+		/*right: 0;
+    top: 0;*/
+	}
+	.responsive {
+		display: none;
+	}
+	.fa {
+		font-size: 20px !important;
+	}
+}
+
+#Logo {
+	display: flex;
+	align-self: start;
+	margin: 1em 0 0 1em;
+}
+
+#Logo>p {
+	color: white;
+	margin: 0 0 0 1em;
+	align-self: center;
+	font-weight: 600;
+}
+
+.logo_img {
+	width: 40px;
+	max-height: 41px;
+}
+
+#links {
+	margin: 1em 1em 0 0;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+}
+
+li {
+	padding: 1em;
+}
+
+li>button {
+	background: none;
+	border: none;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	display: block;
+	align-self: center;
+	justify-self: center;
+}
+
+a {
+	text-decoration: none;
+	color: #d3d3d3;
+	font-weight: 500;
+}
+
+a:hover {
+	color: white;
+}
+
+#upload_btn {
+	background-color: #05a081;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 0.5em;
+}
+
+#header_content {
+	margin-top: 3.5em;
+	width: 100%;
+	max-width: 35%;
+	margin: auto;
+}
+
+#title {
+	text-align: left;
+	color: white;
+	font-size: 36px;
+}
+
+#zoekbalk {
+	padding: 1.5em 0 1.5em 1em;
+	width: inherit;
+	border-radius: 5px;
+	border: none;
+	-webkit-appearance: none;
+}
+
+@media screen and (max-width: 1144px) {
+	#header_content {
+		max-width: 90%;
+		margin-left: 1em;
+	}
+}
