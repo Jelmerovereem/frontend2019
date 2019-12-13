@@ -1,0 +1,321 @@
+body {
+	margin: 0;
+	font-family: segoe ui;
+}
+
+
+/**********************************************************
+					Header & nav Mobiel
+**********************************************************/
+
+header {
+	background-image: url("img/Nav_background2.jpg");
+	background-size: cover;
+	height: 530px;
+}
+
+
+/*Responsive Nav*/
+
+#navigatie {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	border: none;
+	width: 100%;
+	height: 62px;
+}
+
+@keyframes fadeIt {
+	0% {
+		background-color: transparent;
+	}
+	50% {
+		background-color: #17253599;
+	}
+	100% {
+		background-color: #232a34;
+	}
+}
+
+.solid-nav {
+	background-image: none !important;
+	background-color: #232a34;
+	animation: fadeIt 0.3s ease-in-out;
+}
+
+.solid-nav-instant {
+	background-color: #232a34;
+}
+
+.responsive {
+	display: none;
+}
+
+#logo_zoekbalk {
+	display: flex;
+}
+
+#Logo {
+	display: flex;
+	align-self: start;
+	margin: auto 0 auto 1em;
+}
+
+#Logo>p {
+	display: none;
+	color: white;
+	margin: 0 0 0 1em;
+	align-self: center;
+	font-weight: 600;
+}
+
+.logo_img {
+	width: 40px;
+	max-height: 41px;
+}
+
+#zoekbalkNav {
+	display: none;
+	font-size: 12px;
+	color: #c2c2c2;
+	background-color: #596068;
+	border: none;
+	border-radius: 5px;
+	padding: 1em 0 1em 1em;
+	margin: 1em 0 1em 1em;
+	width: 210px;
+	max-width: 550px;
+}
+
+#zoekbalkNav::placeholder {
+	color: #c2c2c2;
+}
+
+.zoekbalkShow {
+	display: block !important;
+	animation: fadeIt 0.3s ease-in-out;
+}
+
+.zoekbalkShow-instant {
+	display: block !important;
+}
+
+#links>ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+#hamburger {
+	display: flex;
+	position: relative;
+	width: 20px;
+	height: 15px;
+	align-items: center;
+	align-self: center;
+	margin: 50% 1.5em 0 0;
+}
+
+#hamburger>span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: white;
+}
+
+#hamburger>span::before,
+#hamburger>span::after {
+	content: '';
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background-color: white;
+	background: white;
+}
+
+#hamburger>span::before {
+	top: 0px;
+}
+
+#hamburger>span::after {
+	bottom: 0px;
+}
+
+#menu {
+	display: none;
+	background-color: #232a34;
+	position: fixed;
+	top: 62px;
+	width: 100%;
+	height: 100vh;
+}
+
+#menu>ul>li>a {
+	font-size: 18px;
+	line-height: 2em;
+}
+
+.menu_show {
+	display: block !important;
+}
+
+hr {
+	width: 83%;
+}
+
+#header_content {
+	width: 100%;
+	max-width: 35%;
+	margin: auto;
+	margin-top: -62px;
+}
+
+#title {
+	text-align: left;
+	color: white;
+	font-size: 36px;
+	padding-top: 3.5em;
+}
+
+#zoekbalk {
+	padding: 1.5em 0 1.5em 1em;
+	width: inherit;
+	border-radius: 5px;
+	border: none;
+	-webkit-appearance: none;
+}
+
+#tags {
+	display: flex;
+	width: 20%;
+	font-size: 12px;
+	padding-top: 1em;
+}
+
+#tags>p {
+	color: white;
+	display: none;
+}
+
+#tags>ul {
+	display: flex;
+	padding-left: 0;
+}
+
+#tags>ul>li {
+	padding-right: 0.3em;
+}
+
+#tags>ul>li>a {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+#tabs {
+	display: flex;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+}
+
+#tabs>p {
+	color: #d3d3d3;
+}
+
+#tabs>h2 {
+	padding-right: 0.5em;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.tab {
+	color: #d3d3d3;
+	font-weight: 300;
+}
+
+.active {
+	color: black;
+	font-weight: 600;
+}
+
+#images-homepage>div>img {
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding: 1em 0;
+}
+
+
+/*******************************************
+			Header & Nav Laptop
+*******************************************/
+
+@media (min-width: 850px) {
+	.responsive {
+		display: block;
+	}
+	#Logo>p {
+		display: block;
+	}
+	#zoekbalkNav {
+		width: 550px;
+	}
+	#hamburger {
+		display: none;
+	}
+	ul {
+		display: flex;
+		margin: 0;
+	}
+	li {
+		padding: 1em;
+	}
+	li>button {
+		background: none;
+		border: none;
+		color: white;
+		font-weight: 600;
+		text-align: center;
+		display: block;
+		align-self: center;
+		justify-self: center;
+	}
+	#upload_btn {
+		background-color: #05a081;
+		border: 1px solid black;
+		border-radius: 3px;
+		padding: 0.5em;
+	}
+	#images-homepage {
+		margin: auto;
+		width: 90%;
+		display: flex;
+	}
+	#images-homepage>div>img {
+		width: 95%;
+		margin: 1em;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #d3d3d3;
+	font-weight: 500;
+}
+
+.link:hover {
+	color: white;
+}
+
+@media screen and (max-width: 1144px) {
+	#header_content {
+		max-width: 90%;
+		margin-left: 1em;
+	}
+}
