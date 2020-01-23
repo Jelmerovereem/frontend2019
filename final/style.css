@@ -346,6 +346,10 @@ display: block;
 
 }
 
+.licensePage>main>div:nth-child(1)>a:hover {
+	color: #0064f9;
+}
+
 /* Actieve tab */
 .licensePage>main>div:nth-child(1)>a:nth-child(2) {
 	color: #0064f9;
@@ -519,29 +523,40 @@ display: block;
 	margin-top: 50px;
 }
 
-form {
+/* contact form */
+main>section>form {
 	width: 90%;
 	margin: auto;
 	text-align: center;
+	margin-top: 30px;
 }
 
 /* form velden */
-form>input, form>textarea {
+main>section>form>input, form>textarea {
 	width: 70%;
 	padding: 1.5em;
 	margin-bottom: 2em;
 }
-form>select {
+main>section>form>select {
 	width: 75%;
 	padding: 1.5em;
 	margin-bottom: 2em;
 }
 
-form>input:focus, form>select:focus {
+main>section>form>input:focus {
 	outline: none;
+	border:none;
 }
 
-form>a {
+main>section>form>input:focus:valid {
+	border: 2px solid green;
+}
+
+main>section>form>input:focus:invalid {
+	border: 2px solid red;
+}
+
+main>section>form>button {
 	display: block;
 	margin: auto;
 	width: 30%;
@@ -552,14 +567,133 @@ form>a {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 700;
-
+	cursor: pointer;
 }
 
+main>section>form>a {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	width: 30%;
+	background-image: url(img/DarthVader.jpg);
+	background-size: cover;
+	background-position-y: 15%;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+	padding: 1.2em 1em;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+}
+
+/* Footer */
 footer {
-	height: 500px;
-	background-color: blue;
+	background-color: #071b4d;
 }
 
+/* Bovenkant bar footer */
+footer>div:nth-child(1), footer>div:nth-child(2) {
+	display: block;
+	padding-bottom: 25px;
+	border-bottom: 0.5px solid white;
+}
+
+/* Navbar in footer */
+footer>div:nth-child(1)>ul, footer>div:nth-child(3)>ul {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: 25px 0 25px 10px;
+}
+
+footer>div>ul>li {
+	margin-right: 50px;
+}
+
+footer>div>ul>li>a {
+	color: white;
+}
+
+footer>div>form>input {
+	padding: 1em;
+	background-color: #3A4972;
+	border: none;
+	margin: 0 5px 0 15px;
+	border-radius: 5px;
+	color: 	#8B99B6;
+	font-weight: 600;
+}
+
+footer>div>form>input::placeholder {
+	color:#c2c2c2;
+}
+
+footer>div>form>input:focus {
+	outline: none;
+}
+
+footer>div>form>button {
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	padding: 0.8em 2em;
+	color: #1A1A1A;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* linkjes footer body */
+footer>div:nth-child(2)>ul {
+	display: block;
+	padding-left: 0;
+}
+
+footer>div:nth-child(2)>ul>li {
+	margin-top: 25px; 
+}
+
+footer>div:nth-child(2)>ul>li>ul {
+	padding-left: 1em;
+	margin-bottom: 50px;
+}
+
+footer>div:nth-child(2)>ul>li>ul>li {
+	margin-bottom: 15px;
+}
+
+footer>div:nth-child(2)>ul>li>ul>li>a {
+	font-weight: lighter;
+}
+
+footer>div:nth-child(2)>ul>li>ul>li:nth-child(1)>a {
+	color: white;
+	font-weight: bolder;
+}
+
+footer>div:nth-child(3)>div {
+	display: flex;
+	margin: 0 0 0 20px;
+}
+
+/* Logo footer */
+footer>div:nth-child(3)>div>img {
+	width: 35px;
+	max-height: 35px;
+	justify-self: center;
+	align-self: center;
+	margin-right: 5px;
+}
+
+footer>div:nth-child(3)>div>p {
+	color: white;
+	font-size: 14px;
+	align-self: center;
+}
+
+footer>div:nth-child(3)>div>p>span {
+	font-weight: bolder;
+	opacity: 1;
+}
 /*******************************************
 			Header & Nav Laptop
 *******************************************/
@@ -725,8 +859,27 @@ footer {
 		font-weight: 700;
 	}
 
-	form {
+	main>section>form {
 		width: 50%;
+	}
+
+	/* Bovenkant bar footer */
+	footer>div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+		/* linkjes footer body */
+	footer>div:nth-child(2)>ul {
+		display: flex;
+	}
+
+	footer>div:nth-child(2)>ul>li {
+		padding-right:180px;
+	}
+	
+	footer>div:nth-child(2)>ul>li>ul>li {
+		padding: 0;
 	}
 }
 
@@ -749,18 +902,4 @@ nav>div:nth-child(2)>ul>li:hover #dropdown_button {
 		max-width: 90%;
 		margin-left: 1em;
 	}
-}
-
-@keyframes fade {
-  0% { opacity: 1; }
-  10% { opacity: 0; }
-  20% { opacity: 1; }
-  30% { opacity: 0; }
-  40% { opacity: 1; }
-  50% { opacity: 0; }
-  60% { opacity: 1; }
-  70% { opacity: 0; }
-  80% { opacity: 1 }
-  90% { opacity: 0; }
-  100% { opacity: 1; }
 }
