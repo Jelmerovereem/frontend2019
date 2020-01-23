@@ -1,211 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>License of our free stock photos - Pexels</title>
-	<link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body class="licensePage">
-	<header>
-        <nav>
+   <head>
+      <meta charset="UTF-8">
+      <title>License of our free stock photos - Pexels</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="licensePage">
+      <header>
+         <nav>
             <div>
-                <div>
-                    <img alt="logo" src="img/Logo_pexels.png">
-                    <p>Pexels</p>
-                </div>
-                <input  type="search" placeholder="Search for free photos and videos">
+               <div>
+                  <img alt="logo" src="img/Logo_pexels.png">
+                  <p>Pexels</p>
+               </div>
+               <input  type="search" placeholder="Search for free photos and videos">
             </div>
             <div>
                <!-- Navigatie links voor Desktop -->
-                <ul>
-                    <li><a href="">Explore</a>
-                        <div id="dropdown_explore">
-                            <ul class="dropdown_menu">
-                                <li><a href="">Discover Photos</a></li>
-                                <li><a href="">Popular Photos</a></li>
-                                <li><a href="">Popular Searches</a></li>
-                                <li><a href="">Leaderboard</a></li>
-                                <li><a href="">Challenges</a></li>
-                                <li><a href="">Photos by Color</a></li>
-                                <li><a href="">Free Videos</a></li>
-                                <li><a href="">Pexels Stories</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="License.html">License</a></li>
-                    <li><a href="">Join</a></li>
-                    <li>
-                        <button id="button_hover">...</button>
-                        <div id="dropdown_button">
-                            <ul>
-                                <li><a href="">Login</a></li>
-                                <li><a href="">Join</a></li>
-                                <li><a href="">Explore</a></li>
-                                <li><a href="license.html">License</a></li>
-                                <li><a href="">Change language</a></li>
-                                <li><a href="">Apps & PS Plugin</a></li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">Imprint & Terms</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="">Upload</a>
-                    </li>
-                </ul>
-                <div id="hamburger">
-                    <span></span>
-                </div>
+               <ul>
+                  <li>
+                     <a href="">Explore</a>
+                     <div id="dropdown_explore">
+                        <ul class="dropdown_menu">
+                           <li><a href="">Discover Photos</a></li>
+                           <li><a href="">Popular Photos</a></li>
+                           <li><a href="">Popular Searches</a></li>
+                           <li><a href="">Leaderboard</a></li>
+                           <li><a href="">Challenges</a></li>
+                           <li><a href="">Photos by Color</a></li>
+                           <li><a href="">Free Videos</a></li>
+                           <li><a href="">Pexels Stories</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li><a href="License.html">License</a></li>
+                  <li><a href="">Join</a></li>
+                  <li>
+                     <button id="button_hover">...</button>
+                     <div id="dropdown_button">
+                        <ul>
+                           <li><a href="">Login</a></li>
+                           <li><a href="">Join</a></li>
+                           <li><a href="">Explore</a></li>
+                           <li><a href="license.html">License</a></li>
+                           <li><a href="">Change language</a></li>
+                           <li><a href="">Apps & PS Plugin</a></li>
+                           <li><a href="">About Us</a></li>
+                           <li><a href="">FAQ</a></li>
+                           <li><a href="">Imprint & Terms</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="">Upload</a>
+                  </li>
+               </ul>
+               <div id="hamburger">
+                  <span></span>
+               </div>
             </div>
-        </nav>
-        <!-- Nav linkjes voor mobile -->
-        <div id="menu">
+         </nav>
+         <!-- Nav linkjes voor mobile -->
+         <div id="menu">
             <ul>
-                <li><a href="">Discover Photos</a></li>
-                <li><a href="">Popular Photos</a></li>
-                <li><a href="">Popular Searches</a></li>
-                <li><a href="">Leaderboard</a></li>
-                <li><a href="">Challenges</a></li>
-                <li><a href="">Photos by Color</a></li>
-                <li><a href="">Free Videos</a></li>
-                <li><a href="">Pexels Stories</a></li>
+               <li><a href="">Discover Photos</a></li>
+               <li><a href="">Popular Photos</a></li>
+               <li><a href="">Popular Searches</a></li>
+               <li><a href="">Leaderboard</a></li>
+               <li><a href="">Challenges</a></li>
+               <li><a href="">Photos by Color</a></li>
+               <li><a href="">Free Videos</a></li>
+               <li><a href="">Pexels Stories</a></li>
             </ul>
             <hr>
             <ul>
-                <li><a href="">Login</a></li>
-                <li><a href="">Join</a></li>
-                <li><a href="">Explore</a></li>
-                <li><a href="">License</a></li>
-                <li><a href="">Change language</a></li>
-                <li><a href="">Apps & PS Plugin</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Imprint & Terms</a></li>
+               <li><a href="">Login</a></li>
+               <li><a href="">Join</a></li>
+               <li><a href="">Explore</a></li>
+               <li><a href="">License</a></li>
+               <li><a href="">Change language</a></li>
+               <li><a href="">Apps & PS Plugin</a></li>
+               <li><a href="">About Us</a></li>
+               <li><a href="">FAQ</a></li>
+               <li><a href="">Imprint & Terms</a></li>
             </ul>
-        </div>
-    </header>
-        <main>
-            <!-- Tabs -->
+         </div>
+      </header>
+      <main>
+         <!-- Tabs -->
+         <div>
+            <a href="https://www.pexels.com/about/">About Us</a>
+            <a href="license.html">License</a>
+            <a href="https://www.pexels.com/faq/">FAQ</a>
+         </div>
+         <section id="heroimage">
+            <h1>Legal Simplicity</h1>
+            <p>All photos on Pexels can be used for free.</p>
+         </section>
+         <section>
+            <h2>What is allowed?</h2>
+            <p>We tried to keep the Pexels License as simple as possible. Keep reading to find out more.</p>
             <div>
-                <a href="https://www.pexels.com/about/">About Us</a>
-                <a href="license.html">License</a>
-                <a href="https://www.pexels.com/faq/">FAQ</a>
+               <ul>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.34 9.98">
+                        <defs></defs>
+                        <title>groen vinkje v3</title>
+                        <polygon class="cls-1" points="0 6.53 3.72 9.98 11.34 1.44 9.73 0 3.81 7.28 1.51 5 0 6.53"/>
+                     </svg>
+                     <span>All photos on Pexels are free to use.</span>
+                  </li>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.34 9.98">
+                        <defs></defs>
+                        <title>groen vinkje v3</title>
+                        <polygon class="cls-1" points="0 6.53 3.72 9.98 11.34 1.44 9.73 0 3.81 7.28 1.51 5 0 6.53"/>
+                     </svg>
+                     <span>Attribution is not required. Giving credit to the photographer or Pexels is not necessary but always appreciated.</span>
+                  </li>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.34 9.98">
+                        <defs></defs>
+                        <title>groen vinkje v3</title>
+                        <polygon class="cls-1" points="0 6.53 3.72 9.98 11.34 1.44 9.73 0 3.81 7.28 1.51 5 0 6.53"/>
+                     </svg>
+                     <span>You can modify the photos. Be creative and edit the photos as you like.</span>
+                  </li>
+               </ul>
             </div>
-            <section id="heroimage">
-                <h1>Legal Simplicity</h1>
-                <p>All photos on Pexels can be used for free.</p>
-            </section>
-            <section>
-                <h2>What is allowed?</h2>
-                <p>We tried to keep the Pexels License as simple as possible. Keep reading to find out more.</p>
-                <div>
-                    <ul>
-                        <li>
-                           <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.34 9.98"><defs></defs><title>groen vinkje v3</title><polygon class="cls-1" points="0 6.53 3.72 9.98 11.34 1.44 9.73 0 3.81 7.28 1.51 5 0 6.53"/></svg> 
-                           <span>All photos on Pexels are free to use.</span>
-                        </li>
-                        <li>
-                            <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.34 9.98"><defs></defs><title>groen vinkje v3</title><polygon class="cls-1" points="0 6.53 3.72 9.98 11.34 1.44 9.73 0 3.81 7.28 1.51 5 0 6.53"/></svg>
-                            <span>Attribution is not required. Giving credit to the photographer or Pexels is not necessary but always appreciated.</span>
-                        </li>
-                        <li>
-                            <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.34 9.98"><defs></defs><title>groen vinkje v3</title><polygon class="cls-1" points="0 6.53 3.72 9.98 11.34 1.44 9.73 0 3.81 7.28 1.51 5 0 6.53"/></svg>
-                            <span>You can modify the photos. Be creative and edit the photos as you like.</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <h2>Tell your story with images</h2>
-                <p>Some of the use cases for which you can use photos from Pexels.</p>
-                <div>
-                    <!-- De blocks -->
-                    <div>
-                        <img src="img/License_1_grid.jpg" alt="">
-                        <div>
-                            <h2>On your website, blog or app</h2>
-                            <p>Use the photos online – whether it’s a website, e-commerce shop, newsletter, e-book, presentation, blog or a template you sell.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="img/License_2_grid.jpg" alt="">
-                        <div>
-                            <h2>Promote your product</h2>
-                            <p>Create unique ads, banners and marketing campaigns with photos from Pexels and promote your product.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="img/License_3_grid.jpg" alt="">
-                        <div>
-                            <h2>Print marketing material</h2>
-                            <p>Use the photos for flyers, postcards, invitations, magazines, albums, books, CD covers and more.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="img/License_4_grid.jpg" alt="">
-                        <div>
-                            <h2>Share them on social media</h2>
-                            <p>Grow your audience by posting authentic and engaging photos on your social media channels.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>What is not allowed?</h2>
-                <p>Respect the hard work of our contributors and keep these restrictions in mind.</p>
-                <div>
-                    <ul>
-                        <li>
-                           <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06"><defs></defs><title>kruisje</title><line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/><line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/></svg>
-                           <span>Identifiable people may not appear in a bad light or in a way that is offensive.</span>
-                        </li>
-                        <li>
-                            <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06"><defs></defs><title>kruisje</title><line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/><line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/></svg>
-                            <span>Don't sell unaltered copies of a photo, e.g. don't sell it as a stock photo, poster, print or on a physical product without adding any value.</span>
-                        </li>
-                        <li>
-                            <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06"><defs></defs><title>kruisje</title><line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/><line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/></svg>
-                            <span>Don't imply endorsement of your product by people or brands on the image.</span>
-                        </li>
-                        <li>
-                            <svg id="Layer_1" width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06"><defs></defs><title>kruisje</title><line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/><line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/></svg>
-                            <span>Don't redistribute or sell the photos on other stock photo or wallpaper platforms.</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+         </section>
+         <section>
+            <h2>Tell your story with images</h2>
+            <p>Some of the use cases for which you can use photos from Pexels.</p>
             <div>
+               <!-- De blocks -->
+               <div>
+                  <img src="img/License_1_grid.jpg" alt="">
+                  <div>
+                     <h2>On your website, blog or app</h2>
+                     <p>Use the photos online – whether it’s a website, e-commerce shop, newsletter, e-book, presentation, blog or a template you sell.</p>
+                  </div>
+               </div>
+               <div>
+                  <img src="img/License_2_grid.jpg" alt="">
+                  <div>
+                     <h2>Promote your product</h2>
+                     <p>Create unique ads, banners and marketing campaigns with photos from Pexels and promote your product.</p>
+                  </div>
+               </div>
+               <div>
+                  <img src="img/License_3_grid.jpg" alt="">
+                  <div>
+                     <h2>Print marketing material</h2>
+                     <p>Use the photos for flyers, postcards, invitations, magazines, albums, books, CD covers and more.
+                     </p>
+                  </div>
+               </div>
+               <div>
+                  <img src="img/License_4_grid.jpg" alt="">
+                  <div>
+                     <h2>Share them on social media</h2>
+                     <p>Grow your audience by posting authentic and engaging photos on your social media channels.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section>
+            <h2>What is not allowed?</h2>
+            <p>Respect the hard work of our contributors and keep these restrictions in mind.</p>
+            <div>
+               <ul>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06">
+                        <defs></defs>
+                        <title>kruisje</title>
+                        <line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/>
+                        <line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/>
+                     </svg>
+                     <span>Identifiable people may not appear in a bad light or in a way that is offensive.</span>
+                  </li>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06">
+                        <defs></defs>
+                        <title>kruisje</title>
+                        <line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/>
+                        <line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/>
+                     </svg>
+                     <span>Don't sell unaltered copies of a photo, e.g. don't sell it as a stock photo, poster, print or on a physical product without adding any value.</span>
+                  </li>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06">
+                        <defs></defs>
+                        <title>kruisje</title>
+                        <line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/>
+                        <line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/>
+                     </svg>
+                     <span>Don't imply endorsement of your product by people or brands on the image.</span>
+                  </li>
+                  <li>
+                     <svg width="20px" height="20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.06 19.06">
+                        <defs></defs>
+                        <title>kruisje</title>
+                        <line class="cls-1" x1="0.18" y1="0.18" x2="18.89" y2="18.89"/>
+                        <line class="cls-1" x1="18.89" y1="0.18" x2="0.18" y2="18.89"/>
+                     </svg>
+                     <span>Don't redistribute or sell the photos on other stock photo or wallpaper platforms.</span>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <div>
             <button>Upload Your Own Photos</button>
             <a href="">Frequently Asked Questions</a>
-            </div>
-            <section>
-                <h2>Have a question?</h2>
+         </div>
+         <section>
+            <h2>Have a question?</h2>
             <form action="">
-                <input type="text" name="name" placeholder="Darth Vader">
-                <input type="email" name="emailaddress" placeholder="DarthVader@empire.glxy">
-                <select id="country" name="country">
-                    <option value="" disabled selected hidden>Your country</option>
+               <input type="text" name="name" placeholder="Darth Vader (Your name)" required>
+               <input type="email" name="emailaddress" placeholder="DarthVader@empire.glxy (Your email)" required>
+               <select id="country" name="country">
+                  <option value="" disabled selected hidden>Your country</option>
                   <option value="NL" disabled>Netherlands</option>
                   <option value="US" disabled>United States</option>
                   <option value="galaxy">In a galaxy far, far away..</option>
-                </select>
-                <textarea id="textarea" name="subject" placeholder="May the force be with you.."></textarea>
-                <a href="#heroimage" id="SWButton">Submit</a>
+               </select>
+               <textarea id="textarea" name="subject" placeholder="May the force be with you.." required></textarea>
+               <button type="submit">submit</button>
+               <a href="#heroimage" id="SWButton">Star Wars Mode</a>
             </form>
-            </section>
-        </main>
-
-        <footer>
-            
-        </footer>
-    <script src="script.js"></script>
-    <audio id="Myaudio" src="Audio/Theme.mp3"></audio>
-</body>
+         </section>
+      </main>
+      <footer>
+         <div>
+            <ul>
+               <li><a href="">Free Stock Photos</a></li>
+               <li><a href="">Free Videos</a></li>
+               <li><a href="">Collections</a></li>
+               <li><a href="">Challenges</a></li>
+               <li><a href="">Leaderboard
+                  Enter your email
+                  </a>
+               </li>
+            </ul>
+            <form action="">
+               <input type="email" placeholder="Enter your email">
+               <button>Sign Up</button>
+            </form>
+         </div>
+         <div>
+            <ul>
+               <li>
+                  <ul>
+                     <li><a href="">Pexels</a></li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Blog</a></li>
+                     <li><a href="">FAQ</a></li>
+                     <li><a href="">Become a hero</a></li>
+                     <li><a href="">Partner with Pexels</a></li>
+                     <li><a href="">API / Developers</a></li>
+                     <li>
+                        <div>
+                           <i class="fab fa-facebook-f"></i>
+                           <i class="fab fa-twitter"></i>
+                           <i class="fab fa-instagram"></i>
+                           <i class="fab fa-pinterest-p"></i>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <ul>
+                     <li><a href="">Apps & Plugins</a></li>
+                     <li><a href="">Pexels foor iOS</a></li>
+                     <li><a href="">Pexels for Android</a></li>
+                     <li><a href="">Other plugins & apps</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <ul>
+                     <li><a href="">Free Stock Photos</a></li>
+                     <li><a href="">Popular searches</a></li>
+                     <li><a href="">Black and white photography</a></li>
+                     <li><a href="">Happy birthday images</a></li>
+                     <li><a href="">Free business videos</a></li>
+                     <li><a href="">Happy new year images</a></li>
+                     <li><a href="">Cool wallpaper</a></li>
+                     <li><a href="">Best HD wallpapers</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <ul>
+                     <li><a href="">Wallpapers</a></li>
+                     <li><a href="">Galaxy wallpaper</a></li>
+                     <li><a href="">Lock screen wallpaper</a></li>
+                     <li><a href="">Iphone wallpaper</a></li>
+                     <li><a href="">4k wallpaper</a></li>
+                     <li><a href="">Samsung wallpaper</a></li>
+                     <li><a href="">Love wallpaper</a></li>
+                     <li><a href="">Mobile wallpaper</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <div>
+               <img src="img/Logo_pexels.png" alt="Logo">
+               <p><span>Pexels</span> — Beautiful free photos contributed by our talented community.</p>
+            </div>
+            <ul>
+               <li><a href="">Terms of Use</a></li>
+               <li><a href="">Privacy Policy</a></li>
+               <li><a href="">License</a></li>
+               <li><a href="">Imprint</a></li>
+               <li><a href="">English
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </footer>
+      <script src="script.js"></script>
+      <audio id="Myaudio" src="Audio/Theme.mp3"></audio>
+   </body>
 </html>
