@@ -7,11 +7,11 @@ window.addEventListener('scroll', function () {
 	scrollpos = window.scrollY;
 
 	if (scrollpos > 100) {
-			navigatiebar.classList.add("solid-nav");
-	zoekbalkNav.classList.add("zoekbalkShow");
+		navigatiebar.classList.add("solid-nav");
+		zoekbalkNav.classList.add("zoekbalkShow");
 	} else {
-			navigatiebar.classList.remove("solid-nav");
-	zoekbalkNav.classList.remove("zoekbalkShow");
+		navigatiebar.classList.remove("solid-nav");
+		zoekbalkNav.classList.remove("zoekbalkShow");
 	}
 	console.log(scrollpos);
 });
@@ -29,7 +29,6 @@ function showmenu1() {
 hamburgerMenu.addEventListener('click', showmenu1);
 
 
-
 var starwars = document.getElementById('SWButton');
 var textarea = document.getElementById('textarea');
 var heroimage = document.querySelector('.licensePage>main>section:nth-child(2)');
@@ -37,11 +36,11 @@ var title = document.querySelector('.licensePage>main>section:nth-child(2)>h1');
 var body = document.querySelector('body');
 
 function StarWarsMode() {
-/*heroimage.style.background = "url(img/starwars.jpg)";*/
-heroimage.style.cssText = "background-image: url(img/starwars.jpg); background-size: contain;";
-title.style.cssText = " font-style: italic;"
-title.innerHTML = '"Do or do not. There is no try."';
-document.getElementById('Myaudio').play();
+	/*heroimage.style.background = "url(img/starwars.jpg)";*/
+	heroimage.style.cssText = "background-image: url(img/starwars.jpg); background-size: contain;";
+	title.style.cssText = " font-style: italic;"
+	title.innerHTML = '"Do or do not. There is no try."';
+	document.getElementById('Myaudio').play();
 }
 
 starwars.addEventListener('click', StarWarsMode);
