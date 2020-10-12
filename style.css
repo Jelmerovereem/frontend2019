@@ -1,0 +1,905 @@
+body {
+	margin: 0;
+	font-family: segoe ui;
+}
+
+
+/**********************************************************
+					Header & nav Mobiel
+**********************************************************/
+
+/* Header met background image */
+header {
+	position: relative;
+	background-image: url("img/Nav_background2.jpg");
+	background-size: cover;
+	height: 530px;
+}
+
+
+/*Responsive Navigatie*/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	border: none;
+	width: 100%;
+	height: 62px;
+	z-index: 9999;
+}
+
+/* Animatie voor de navbar */
+@keyframes fadeIt {
+	0% {
+		background-color: transparent;
+	}
+	50% {
+		background-color: #17253599;
+	}
+	100% {
+		background-color: #232a34;
+	}
+}
+
+/* Deze class wordt toegevoegd aan de navbar bij een scrollpositie. script.js regel 1 t/m 24 */
+.solid-nav {
+	background-image: none !important;
+	background-color: #232a34;
+	animation: fadeIt 0.3s ease-in-out;
+}
+
+/* Als er op de hamburger menu wordt geklikt, komt deze class op de navigatie bar, hier moet namelijk geen animatie. */
+.solid-nav-instant {
+	background-color: #232a34;
+}
+
+/* De linkjes die op mobile  */
+nav>div:nth-child(2)>ul>li {
+	display: none;
+}
+
+/* Zet het logo+naam en zoekbalk naast elkaar */
+nav>div:nth-child(1) {
+	display: flex;
+}
+
+/* Zet de naam naast het logo */
+nav>div>div:nth-child(1) {
+	display: flex;
+	align-self: start;
+	margin: auto 0 auto 1em;
+}
+
+/* De naam "Pexels" */
+nav>div>div:nth-child(1)>p {
+	display: none; /* Op mobile moet de naam niet te zien zijn */
+	color: white;
+	margin: 0 0 0 1em;
+	align-self: center;
+	font-weight: 600;
+}
+
+/* Het logo */
+nav>div>div>img {
+	width: 40px;
+	max-height: 41px;
+}
+
+/* De zoekbalk in de Navbar */
+nav>div>input {
+	display: none;
+	font-size: 12px;
+	color: #c2c2c2;
+	background-color: #596068;
+	border: none;
+	border-radius: 5px;
+	padding: 1em 0 1em 1em;
+	margin: 1em 0 1em 1em;
+	width: 210px;
+	max-width: 550px;
+}
+
+
+/* zoekbalk in navbar placeholder  */
+nav>div>input::placeholder {
+	color: #c2c2c2;
+}
+
+/* De zoekbalk in navbar moet op scrollpositie ook mee gaan. */
+.zoekbalkShow {
+	display: block !important;
+	animation: fadeIt 0.3s ease-in-out;
+}
+
+/* Zodra je op hamburger menu klikt komt hij instant tevoorschijn */
+.zoekbalkShow-instant {
+	display: block !important;
+}
+
+/* Navigatie links */
+nav>div:nth-child(2)>ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+/* Deze navigatie links moeten onzichtbaar zijn op mobile */
+nav>div:nth-child(2)>ul>li>div,
+nav>div:nth-child(2)>ul>li>div {
+	display: none;
+}
+
+/* Het hamburger menu */
+nav>div:nth-child(2)>div {
+	display: flex;
+	position: relative;
+	width: 20px;
+	height: 15px;
+	align-items: center;
+	align-self: center;
+	margin: 50% 1.5em 0 0;
+}
+
+nav>div:nth-child(2)>div:nth-child(2)>span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: white;
+}
+
+nav>div:nth-child(2)>div:nth-child(2)>span::before,
+nav>div:nth-child(2)>div:nth-child(2)>span::after {
+	content: '';
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background-color: white;
+	background: white;
+}
+
+nav>div:nth-child(2)>div:nth-child(2)>span::before {
+	top: 0;
+}
+
+nav>div:nth-child(2)>div:nth-child(2)>span::after {
+	bottom: 0;
+}
+
+header>div:nth-child(2) {
+	display: none; /* navbar is niet zichtbaar op mobile */
+	background-color: #232a34;
+	position: fixed;
+	top: 62px;
+	width: 100%;
+	height: 100vh;
+	z-index: 99;
+}
+
+header>div:nth-child(2)>ul>li>a {
+	font-size: 18px;
+	line-height: 2em;
+}
+
+/* Als je op hamburger menu klikt dan komt het menu met linkjes tevoorschijn */
+.menu_show {
+	display: block !important;
+}
+
+hr {
+	width: 83%;
+}
+
+/* De titel, zoekbalk en tags in de banner */
+header>div:nth-child(3) {
+	width: 100%;
+	max-width: 35%;
+	margin: auto;
+	margin-top: -62px;
+}
+
+/* Titel */
+header>div:nth-child(3)>h1 {
+	text-align: left;
+	color: white;
+	font-size: 36px;
+	padding-top: 3.5em;
+}
+
+/* Zoekbalk */
+header>div:nth-child(3)>input {
+	padding: 1.5em 0 1.5em 1em;
+	width: inherit;
+	border-radius: 5px;
+	border: none;
+	-webkit-appearance: none;
+}
+
+header>div:nth-child(3)>div {
+	display: flex;
+	width: 20%;
+	font-size: 12px;
+	padding-top: 1em;
+}
+
+header>div:nth-child(3)>div>p {
+	color: white;
+	display: none;
+}
+
+header>div:nth-child(3)>div>ul {
+	display: flex;
+	padding-left: 0;
+}
+
+header>div:nth-child(3)>div>ul>li {
+	padding-right: 0.3em;
+}
+
+/* Tags */
+header>div:nth-child(3)>div>ul>li>a {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* Tags hover */
+header>div:nth-child(3)>div>ul>li>a:hover {
+	color: white;
+}
+
+header>a {
+	display: none;
+}
+
+
+/**********************************************************
+					Main Mobiel
+**********************************************************/
+
+/* "Free Stock Photos" & tabs */
+main>article:nth-child(1)>div {
+	display: flex;
+	align-items: center;
+	width: 97%;
+	margin: auto;
+}
+
+main>article:nth-child(1)>div>p {
+	color: #d3d3d3;
+}
+
+main>article:nth-child(1)>div>h2 {
+	padding-right: 0.5em;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+main>article:nth-child(1)>div>p>a {
+	color: #d3d3d3;
+	font-weight: 300;
+}
+
+.active {
+	color: black !important;
+	font-weight: 600 !important;
+}
+
+/* Afbeeldingen */
+main>article:nth-child(1)>section>div>figure>img {
+	width: 95%;
+	display: block;
+	margin: auto;
+	padding: 1em 0;
+}
+
+figure {
+	margin: 0;
+	position: relative;
+}
+
+/* Caption bij de afbeeldingen */
+figcaption {
+	display: block;
+	width: 85%;
+	position: absolute;
+	bottom: 16px;
+	left: 2.5%;
+	padding: 0 0 5% 10%;
+	background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	color: white;
+}
+
+/*License page*/
+
+.licensePage>header {
+	background-image: none; /* Geen achtergrond afbeelding */
+	height: 85px;
+}
+
+/* Navbar is constant zichtbaar */
+.licensePage>header>nav {
+	background-color: #232a34;
+}
+
+/* zoekbalk ik constant zichtbaar */
+.licensePage>header>nav>div>input {
+display: block;
+}
+
+/* container voor tabs */
+.licensePage>main>div:nth-child(1) {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Tabs */
+.licensePage>main>div:nth-child(1)>a {
+	font-size: 17px;
+	font-weight: 600;
+	color: #5e5e5e;
+	padding: 1em;
+
+}
+
+.licensePage>main>div:nth-child(1)>a:hover {
+	color: #0064f9;
+}
+
+/* Actieve tab */
+.licensePage>main>div:nth-child(1)>a:nth-child(2) {
+	color: #0064f9;
+	border-bottom: 3px solid #0064f9;
+}
+
+/* Container met foto */
+.licensePage>main>section:nth-child(2) {
+	background-image: url(img/LicenseHero.jpg); /*https://www.pexels.com/assets/page-headers/woman-957b02e81f6664f63d640eb8b23111172fad8e0d5e1f720bf6fa4ed9863f9d9a.jpg*/
+	background-size: cover;
+	background-position: 20%;
+	height: 400px;
+}
+
+/* Titel */
+.licensePage>main>section:nth-child(2)>h1 {
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	padding-top: 20vh;
+}
+
+/* Subtitle */
+.licensePage>main>section:nth-child(2)>p {
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+}
+
+.licensePage>main>section {
+	margin-bottom: 100px;
+}
+
+/* Headline */
+.licensePage>main>section>h2 {
+	font-size: 36px;
+	text-align: center;
+	color: #1a1a1a;
+	margin-bottom: 0;
+}
+
+/* (side)note */
+.licensePage>main>section>p {
+	text-align: center;
+	font-size: 16px;
+	margin: auto;
+	line-height: 1.6;
+	color: #5e5e5e;
+	width: 70vw;
+	margin-bottom: 25px;
+}
+
+/* container voor vinkjes voorwaarden */
+.licensePage>main>section:nth-child(3)>div {
+	margin-top: 20px;
+}
+
+.licensePage>main>section>div>ul>li {
+	margin-bottom: 30px;
+}
+
+/* vinkjes & kruisjes */
+.licensePage>main>section>div>ul>li>svg {
+	width: 60px;
+	vertical-align: middle;
+}
+
+.licensePage>main>section:nth-child(3)>div>ul>li>svg {
+	fill: #05a081;
+}
+
+/* Text bij vinkjes & kruisjes */
+.licensePage>main>section>div>ul>li>span {
+	font-size: 18px;
+	line-height: 1.6;
+	display: inline-block;
+	width: 60%;
+	vertical-align: middle;
+}
+
+/* Container van de blocks */
+.licensePage>main>section:nth-child(4)>div {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	padding: 0 20px;
+	margin-top: 40px;
+}
+
+/* De blocks */
+.licensePage>main>section:nth-child(4)>div>div {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+/* De afbeeldingen in de blocks */
+.licensePage>main>section:nth-child(4)>div>div>img {
+	 align-self: center; /* Zodat images niet stretchen */
+	 width: 120px;
+}
+
+/* Container van de tekst in de blocks */
+.licensePage>main>section:nth-child(4)>div>div>div {
+	padding-left: 25px;
+}
+
+/* De heading in de blocks */
+.licensePage>main>section:nth-child(4)>div>div>div>h2 {
+	font-size: 22px;
+	color: #1a1a1a;
+}
+
+/* De subtekst in de blocks */
+.licensePage>main>section:nth-child(4)>div>div>div>p {
+	color: #5e5e5e;
+}
+
+/* Kruisjes */
+.licensePage>main>section:nth-child(5)>div>ul>li>svg {
+	fill:none;
+	stroke:#ea2424;
+	stroke-miterlimit:10;
+	stroke-width:1.5px;
+}
+
+/* container voor buttons */
+.licensePage>main>div:nth-child(6) {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-column-gap: 1em;
+	width: 80%;
+	margin: auto;
+}
+
+/* Button upload */
+.licensePage>main>div:nth-child(6)>button {
+	background-color: #05a081;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 1.2em 1em;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.licensePage>main>div:nth-child(6)>button:hover {
+	background-color: #036f59;
+}
+
+
+/* FAQ */
+.licensePage>main>div:nth-child(6)>a {
+	background-color: #fafafa;
+	padding: 1em 1em;
+	border: 1px solid #e8e8e8;
+	color: #1A1A1A;
+	font-weight: 700;
+}
+
+.licensePage>main>div:nth-child(6)>a:hover {
+	background-color: #e8e8e8;
+}
+
+/* container van form */
+.licensePage>main>section:nth-child(7) {
+	margin-top: 50px;
+}
+
+/* contact form */
+main>section>form {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* form velden */
+main>section>form>input, form>textarea {
+	width: 70%;
+	padding: 1.5em;
+	margin-bottom: 2em;
+}
+main>section>form>select {
+	width: 75%;
+	padding: 1.5em;
+	margin-bottom: 2em;
+}
+
+main>section>form>input:focus {
+	outline: none;
+	border:none;
+}
+
+main>section>form>input:focus:valid {
+	border: 2px solid green;
+}
+
+main>section>form>input:focus:invalid {
+	border: 2px solid red;
+}
+
+main>section>form>button {
+	display: block;
+	margin: auto;
+	width: 30%;
+	background-color: #05a081;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 1.2em 1em;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+main>section>form>a {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	width: 30%;
+	background-image: url(img/DarthVader.jpg);
+	background-size: cover;
+	background-position-y: 15%;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+	padding: 1.2em 1em;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+}
+
+/* Footer */
+footer {
+	background-color: #071b4d;
+}
+
+/* Bovenkant bar footer */
+footer>div:nth-child(1), footer>div:nth-child(2) {
+	display: block;
+	padding-bottom: 25px;
+	border-bottom: 0.5px solid white;
+}
+
+/* Navbar in footer */
+footer>div:nth-child(1)>ul, footer>div:nth-child(3)>ul {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: 25px 0 25px 10px;
+}
+
+footer>div>ul>li {
+	margin-right: 50px;
+}
+
+footer>div>ul>li>a {
+	color: white;
+}
+
+footer>div>form>input {
+	padding: 1em;
+	background-color: #3A4972;
+	border: none;
+	margin: 0 5px 0 15px;
+	border-radius: 5px;
+	color: 	#8B99B6;
+	font-weight: 600;
+}
+
+footer>div>form>input::placeholder {
+	color:#c2c2c2;
+}
+
+footer>div>form>input:focus {
+	outline: none;
+}
+
+footer>div>form>button {
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	padding: 0.8em 2em;
+	color: #1A1A1A;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* linkjes footer body */
+footer>div:nth-child(2)>ul {
+	display: block;
+	padding-left: 0;
+}
+
+footer>div:nth-child(2)>ul>li {
+	margin-top: 25px; 
+}
+
+footer>div:nth-child(2)>ul>li>ul {
+	padding-left: 1em;
+	margin-bottom: 50px;
+}
+
+footer>div:nth-child(2)>ul>li>ul>li {
+	margin-bottom: 15px;
+}
+
+footer>div:nth-child(2)>ul>li>ul>li>a {
+	font-weight: lighter;
+}
+
+footer>div:nth-child(2)>ul>li>ul>li:nth-child(1)>a {
+	color: white;
+	font-weight: bolder;
+}
+
+footer>div:nth-child(3)>div {
+	display: flex;
+	margin: 0 0 0 20px;
+}
+
+/* Logo footer */
+footer>div:nth-child(3)>div>img {
+	width: 35px;
+	max-height: 35px;
+	justify-self: center;
+	align-self: center;
+	margin-right: 5px;
+}
+
+footer>div:nth-child(3)>div>p {
+	color: white;
+	font-size: 14px;
+	align-self: center;
+}
+
+footer>div:nth-child(3)>div>p>span {
+	font-weight: bolder;
+	opacity: 1;
+}
+/*******************************************
+			Header & Nav Laptop
+*******************************************/
+
+@media (min-width: 850px) {
+	/* Navigatie zichtbaar maken voor Laptop */
+	nav>div:nth-child(2)>ul>li {
+		display: block;
+	}
+	nav>div:nth-child(2)>ul>li>a {
+		color: #d3d3d3;
+	}
+	nav>div>div:nth-child(1)>p {
+		display: block;
+	}
+
+	/* Zoekbalk in navigatiebar */
+	nav>div:nth-child(1)>input {
+		width: 550px;
+	}
+
+	/* Hamburger menu */
+	nav>div:nth-child(2)>div {
+		display: none;
+	}
+
+	/* Dropdown menu's naast elkaar */
+	nav>div:nth-child(2)>ul {
+		display: flex;
+		margin: 0;
+	}
+
+	/* Linkjes in navigatie */
+	nav>div:nth-child(2)>ul>li>a,
+	nav>div:nth-child(2)>ul>li>button {
+		float: right;
+	}
+
+	/* dropdown menu */
+	nav>div:nth-child(2)>ul>li>div {
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0px 0px 4px #d9d9d9;
+	}
+
+	/* dropdown menu lijst */
+	nav>div:nth-child(2)>ul>li>div>ul {
+		padding: 0;
+		font-size: 14px;
+		margin-top: 3.5em;
+	}
+	nav>div:nth-child(2)>ul>li>div>ul>li {
+		padding: 0 !important;
+	}
+	nav>div:nth-child(2)>ul>li>div>ul>li>a {
+		display: block;
+		padding: 1em 2em 1em 1.15rem;
+		font-weight: 300 !important;
+	}
+	nav>div:nth-child(2)>ul>li>div>ul>li>a:hover {
+		color: #000;
+		background-color: #e8e8e8;
+	}
+	li {
+		padding: 1em;
+	}
+	li>button {
+		background: none;
+		border: none;
+		color: white;
+		font-weight: 600;
+		text-align: center;
+		display: block;
+		align-self: center;
+		justify-self: center;
+	}
+
+	/* Upload button */
+	nav>div:nth-child(2)>ul>li:nth-child(5)>a {
+		background-color: #05a081;
+		border: 1px solid black;
+		border-radius: 3px;
+		padding: 0.5em;
+		color: #fff;
+		line-height: 1;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* Credit author */
+	header>a {
+		display: block;
+		font-size: 12px;
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		color: white;
+		opacity: .5;
+		font-weight: 300;
+	}
+	header>a:hover {
+		opacity: 1;
+	}
+	main>article>section {
+		margin: auto;
+		width: 99%;
+		display: flex;
+	}
+
+	/* Afbeeldingen */
+	main>article>section>div>figure>img {
+		width: 95%;
+		margin: 1em;
+	}
+
+	/* caption niet zichtbaar, alleen op hover */
+	figcaption {
+		display: none;
+	}
+	figure:hover figcaption {
+		display: block;
+	}
+
+	/* License page */
+
+	/* Subtitle */
+	.licensePage>main>section:nth-child(2)>p {
+		font-size: 25px;
+	}
+	
+	/* Container voor vinkjes & kruisjes */
+	.licensePage>main>section>div {
+		margin-right: auto;
+		margin-left: 30%;
+		width: 50%;
+	}
+
+	/* Container van de blocks */
+	.licensePage>main>section:nth-child(4)>div {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 1200px;
+		margin: auto;
+	}
+	
+	/* Container voor buttons */
+	.licensePage>main>div:nth-child(6) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1em;
+		width: 30%;
+		margin: auto;
+	}
+
+	/* Button upload */
+	.licensePage>main>div:nth-child(6)>button {
+		background-color: #05a081;
+		border: 1px solid black;
+		border-radius: 3px;
+		padding: 0.5em 1em;
+		color: #fff;
+		font-weight: 700;
+	}
+
+	main>section>form {
+		width: 50%;
+	}
+
+	/* Bovenkant bar footer */
+	footer>div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+		/* linkjes footer body */
+	footer>div:nth-child(2)>ul {
+		display: flex;
+	}
+
+	footer>div:nth-child(2)>ul>li {
+		padding-right:180px;
+	}
+	
+	footer>div:nth-child(2)>ul>li>ul>li {
+		padding: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #d3d3d3;
+	font-weight: 500;
+}
+
+nav>div:nth-child(2)>ul>li:hover #dropdown_explore {
+	display: block;
+}
+
+nav>div:nth-child(2)>ul>li:hover #dropdown_button {
+	display: block;
+}
+
+@media screen and (max-width: 1144px) {
+	header>div:nth-child(3) {
+		max-width: 90%;
+		margin-left: 1em;
+	}
+}
